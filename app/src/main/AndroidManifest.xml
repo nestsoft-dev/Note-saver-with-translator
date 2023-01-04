@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.keepmeapp.mynotesaver">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/book_icon_n"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/book_icon_n"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.MyNoteSaver">
+        <activity
+            android:name="com.keepmeapp.mynotesaver.SplashActivity"
+            android:exported="true" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3667519865612936~5012596135" />
+
+        <activity
+            android:name="com.keepmeapp.mynotesaver.NotesWriteActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.keepmeapp.mynotesaver.MainActivity"
+            android:exported="true">
+
+        </activity>
+    </application>
+
+</manifest>
